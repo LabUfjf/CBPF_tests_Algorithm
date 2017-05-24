@@ -22,9 +22,9 @@ data = data(setdiff(1:length(data),ind_ndaq),:);
 % pause
 Nevt = length(ind_ndaq);
 
-if Nevt >= 40000
-Nevt = 40000;
-end
+% if Nevt >= 40000
+% Nevt = 40000;
+% end
 
 for i = 1:Nevt
     AQNdaq(i,:) = ones(1,100).*Ndaq(i);

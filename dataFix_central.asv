@@ -6,13 +6,13 @@ for j=1:length(data.out.NDAQ)
     
     for i=1:8
         TH=round(mean(mean(data.out.NDAQ{j}.CH{i}([1:15],:))));
-        inde{j}(i,:)=ones(1,length(max(data.out.NDAQ{j}.CH{i}([1:20],:))));
-        indd{j}(i,:)=ones(1,length(max(data.out.NDAQ{j}.CH{i}([60:100],:))));
-        indi{j}(i,:)=ones(1,length(min(data.out.NDAQ{j}.CH{i}([20:60],:))));
-        %         inde{j}(i,:)=max(data.out.NDAQ{j}.CH{i}([1:20],:))<TH+4;
-        %         indd{j}(i,:)=max(data.out.NDAQ{j}.CH{i}([60:100],:))<TH+5;
-        %         indi{j}(i,:)=min(data.out.NDAQ{j}.CH{i}([20:60],:))>TH-10;
-        %         [j i TH-4]
+       inde{j}(i,:)=max(data.out.NDAQ{j}.CH{i}([1:20],:));
+        indd{j}(i,:)=max(data.out.NDAQ{j}.CH{i}([60:100],:));
+        indi{j}(i,:)=min(data.out.NDAQ{j}.CH{i}([20:60],:));
+%         inde{j}(i,:)=max(data.out.NDAQ{j}.CH{i}([1:20],:))<TH+4;
+%         indd{j}(i,:)=max(data.out.NDAQ{j}.CH{i}([60:100],:))<TH+5;
+%         indi{j}(i,:)=min(data.out.NDAQ{j}.CH{i}([20:60],:))>TH-10;
+%         [j i TH-4]
     end
     
     inde{j}=sum(inde{j})==8;

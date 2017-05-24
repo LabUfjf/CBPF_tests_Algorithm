@@ -2,14 +2,14 @@
 clc; close all; clear variables
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-file = 'raw_00000001_0001_1495054629.dat';
+file = 'raw_00000001_0001_1495115131.dat';
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % HABILITAR PLOTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 doPlot.NPMT = 0;        % Plot da eficiência pelo número de PMTs diparadas;
 doPlot.PMT = 0;         % Plot da eficiência de cada PMT individualmente
-doPlot.ENERGY = 1;      % Histograma de energia
-doPlot.SHAPE = 0;       % Plot de todos os Shapes dos eventos nas 8 PMTs
+doPlot.ENERGY = 0;      % Histograma de energia
+doPlot.SHAPE = 1;       % Plot de todos os Shapes dos eventos nas 8 PMTs
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TRIGGER

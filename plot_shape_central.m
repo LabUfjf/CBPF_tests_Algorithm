@@ -2,8 +2,8 @@ function [M] = plot_shape_central(data)
 % figure
 for i = 1:8
 subplot(2,4,i); 
-if size(data.CH{i},2)>500
-    n=500;
+if size(data.CH{i},2)>10000
+    n=10000;
 else
     n = size(data.CH{i},2);
 end
